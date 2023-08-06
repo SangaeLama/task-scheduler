@@ -25,8 +25,9 @@ python task_scheduler.py schedule.txt
 ## Example
 
 Suppose you have the following `schedule.txt` file:
-2023-08-10 15:30:00 | echo "Hello world!!!" > hello.txt
-2023-08-11 03:30:00 | python3 -m http.server 
+
+`2023-08-10 15:30:00 | echo "Hello world!!!" > hello.txt
+2023-08-11 03:30:00 | python3 -m http.server` 
 
 Running `scheduler.py schedule.txt` will schedule the command ```echo "Hello world!!!" > hello.txt``` to run on August 10, 2023, at 3:30 PM and a python3 http server will be run on August 11, 2023, at 3:30 AM.
 
