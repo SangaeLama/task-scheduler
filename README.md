@@ -38,5 +38,4 @@ Running `scheduler.py schedule.txt` will schedule the command ```echo "Hello wor
 - Make sure your system's timezone settings are accurate to ensure proper scheduling.
 
 ## Author
-
-[Sangay Lama]
+Sangay Lama
