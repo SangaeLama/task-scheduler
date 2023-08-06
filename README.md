@@ -9,11 +9,11 @@ Task Scheduler is a Python script that reads a schedule file containing specific
 
 ## Usage
 
-1. Create a text file named `schedule.txt` in the same directory as the script.
-2. Each line in `schedule.txt` should follow the format: `YYYY-MM-DD HH:MM:SS | your_command_here`. For example:
+1. Create a text file named `jobs.txt` in the same directory as the script.
+2. Each line in `jobs.txt` should follow the format: `YYYY-MM-DD HH:MM:SS | your_command_here`. For example:
 3. Run the script using the following command, providing the schedule file as an argument:
 
-python task_scheduler.py schedule.txt
+python task_scheduler.py jobs.txt
 
 4. The script will read the schedule from the specified file and execute the specified commands at the specified dates and times.
 
@@ -24,13 +24,13 @@ python task_scheduler.py schedule.txt
 
 ## Example
 
-Suppose you have the following `schedule.txt` file with following lines:
+Suppose you have the following `jobs.txt` file with following lines:
 
 `2023-08-10 15:30:00 | echo "Hello world!!!" > hello.txt`
 
 `2023-08-11 03:30:00 | python3 -m http.server` 
 
-Running `scheduler.py schedule.txt` will schedule the command ```echo "Hello world!!!" > hello.txt``` to run on August 10, 2023, at 3:30 PM and a python3 http server will be run on August 11, 2023, at 3:30 AM.
+Running `scheduler.py jobs.txt` will schedule the command ```echo "Hello world!!!" > hello.txt``` to run on August 10, 2023, at 3:30 PM and a python3 http server will be run on August 11, 2023, at 3:30 AM.
 
 ## Notes
 
