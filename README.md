@@ -30,7 +30,10 @@ Suppose you have the following `jobs.txt` file with following lines:
 
 `2023-08-11 03:30:00 | python3 -m http.server` 
 
-Running `scheduler.py jobs.txt` will schedule the command ```echo "Hello world!!!" > hello.txt``` to run on August 10, 2023, at 3:30 PM and a python3 http server will be run on August 11, 2023, at 3:30 AM.
+Running `scheduler.py jobs.txt` will schedule the commands 
+`echo "Hello world!!!" > hello.txt` to run on August 10, 2023, at 3:30 PM 
+and 
+`python3 -m http.server` to run on August 11, 2023, at 3:30 AM.
 
 ## Notes
 
